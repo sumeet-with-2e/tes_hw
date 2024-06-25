@@ -1,0 +1,14 @@
+<div>
+    <h1>
+        Average Rating: 
+    </h1>
+    <div>
+        <span *ngFor = 'let star of marked_stars; let i = index'>
+            <fa-icon [icon] = "['fas', 'star']"></fa-icon>
+        </span>
+        <span *ngFor = 'let star of unmarked_stars; let i = index'>
+            <fa-icon [icon] = "['far', 'star']"></fa-icon>
+        </span>
+    </div>    
+    <div><br></div>
+</div>
